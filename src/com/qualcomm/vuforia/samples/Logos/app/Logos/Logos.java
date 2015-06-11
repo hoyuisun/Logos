@@ -759,10 +759,11 @@ public class Logos extends Activity implements SampleApplicationControl
                 mBookData = new Logo();
                 
                 mBookData.setTitle(jsonObject.getString("title"));
+                mBookData.setAuthor("");
                 mBookData.setBookUrl(jsonObject.getString("bookurl"));
                 mBookData.setPriceList(jsonObject.getString("list price"));
                 mBookData.setPriceYour(jsonObject.getString("your price"));
-                mBookData.setRatingAvg("5");
+                mBookData.setRatingAvg(jsonObject.getString("average rating"));
                 mBookData.setRatingTotal(jsonObject.getString("# of ratings"));
                 
                 // Gets the book thumb image
@@ -1229,14 +1230,13 @@ public class Logos extends Activity implements SampleApplicationControl
                     Trackable newTrackable = finder.enableTracking(result);
                     if (newTrackable != null)
                     {
-                        Log.d(LOGTAG, "Successfully created new trackable '"
-                            + newTrackable.getName() + "' with rating '"
-                            + result.getTrackingRating() + "'.");
                         
-                        // Checks if the targets has changed
-                        Log.d(LOGTAG, "Comparing Strings. currentTargetId: "
-                            + result.getUniqueTargetId() + "  lastTargetId: "
-                            + lastTargetId);
+                     /*********************************************************************
+                      *   Here We can use switch case identify different logo
+                      *   getUniqueTargetId returns its id (TargetSearchResult type)
+                      *   getName returns target name (Trackable type)
+                      *   lastTargetId here is avoiding same target detection in short time
+                      * *******************************************************************/   
                         
                         if (!result.getUniqueTargetId().equals(lastTargetId))
                         {
