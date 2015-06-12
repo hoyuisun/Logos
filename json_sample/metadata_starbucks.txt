@@ -1,0 +1,10 @@
+﻿{
+	"title": "星巴克",
+	"author": "咖啡",
+	"bookurl": "https://www.google.com.tw/maps/search/星巴克/",
+	"list price": "160",
+	"your price": "80",
+	"average rating": "5",
+	"# of ratings": "5",
+	"thumburl": "http://corporate.univision.com/wp-content/uploads/2015/03/Starbucks-logo.png"
+}

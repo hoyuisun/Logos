@@ -1,0 +1,10 @@
+﻿{
+	"title": "五十嵐",
+	"author":"飲品",
+	"bookurl": "https://www.google.com.tw/maps/search/五十嵐/",
+	"list price": "50",
+	"your price": "45",
+	"average rating": "4",
+	"# of ratings": "4",
+	"thumburl": "http://www.101media.com.tw/img/file/51f3d1ed6fd62.jpg"
+}

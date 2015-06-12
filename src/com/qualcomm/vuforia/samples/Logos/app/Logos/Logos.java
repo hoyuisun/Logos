@@ -759,7 +759,7 @@ public class Logos extends Activity implements SampleApplicationControl
                 mBookData = new Logo();
                 
                 mBookData.setTitle(jsonObject.getString("title"));
-                mBookData.setAuthor("");
+                mBookData.setAuthor(jsonObject.getString("author"));
                 mBookData.setBookUrl(jsonObject.getString("bookurl"));
                 mBookData.setPriceList(jsonObject.getString("list price"));
                 mBookData.setPriceYour(jsonObject.getString("your price"));
